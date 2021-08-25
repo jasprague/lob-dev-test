@@ -1,0 +1,184 @@
+body{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    text-align: center;
+    margin: auto;
+    max-width: 1200px;
+    font-family: 'roboto', sans-serif;
+}
+
+main{
+    color: #3E3E3F;
+    font-weight: 400;
+}
+
+#upper-header{
+    padding: 15px;
+}
+
+#lob-logo{
+    width: 145px;
+    padding: 10px;
+}
+
+.grey-background{
+    background-color: #3E3E3F;
+    color: white;
+}
+
+.teal-background{
+    background-color: #00BBB4;
+}
+#lower-header{
+    padding: 62px;
+}
+
+h1{
+    font-size: 37px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+h2{
+    
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    transform: scale(1, .9);
+    margin-top: 1.25em;
+}
+
+p{
+    font-size: 12px;
+    transform: scale(1, .9);
+}
+
+a{
+    color: #00BBB4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#body-content{
+    text-align: left;
+    margin-bottom: 75px;
+    line-height: 2em;
+}
+
+#inner-wrapper{
+    margin: 0px 150px 0px 150px;
+}
+
+/*user cards content area*/
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 650px;
+    padding-bottom: 55px;
+}
+
+/*user cards style*/
+#container div{
+    height: 120px;
+    flex-basis: 260px;
+    margin: 20px;
+    width: 33%;
+    background-color: white;
+    border-radius: 3%;
+    box-shadow: 0 0 25px rgb(224, 223, 223);
+    
+}
+/*remove side margin to add more space for responsive user cards section & body text*/
+@media (max-width: 1218px){
+    #inner-wrapper{
+        margin: auto;
+    }
+
+    #body-content{
+        margin: 10px;
+    }
+    #container div{
+    flex-shrink: 2;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+}
+/* shrink size of user cards & h1 */
+@media (max-width: 916px){
+    #container div{
+        flex-basis: 25%;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+
+#container div:hover{
+    background-color: #00BBB4;
+    color: white;
+    
+}
+#container div:hover a{
+    color: white;
+    
+}
+
+.user-image{
+    margin-top: -37px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+footer{
+    color: white;
+}
+
+#upper-footer{
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#lower-footer div{
+    margin: 0;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 0;
+}
+
+.center-block{
+    width: 300px;
+    margin: 5px;
+    text-align: center;
+}
+
+#linkedin{
+    width: 40px;
+}
+
+#myname{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+svg{
+    fill: white;
+}
